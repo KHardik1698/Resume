@@ -1,0 +1,178 @@
+body {
+  font-family: "Cinzel", serif;
+  margin: 0px;
+  padding: 0px;
+}
+/* navigation styling */
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+}
+.logo {
+  /* border: 1px solid red; */
+  margin-left: 5%;
+}
+.logo-image {
+  width: 20vh;
+  height: auto;
+  display: block;
+}
+.navigation {
+  /* border: 1px solid red; */
+  margin-right: 5%;
+  font-size: 1.5vw;
+}
+.navigation ul {
+  padding: 0px;
+}
+.nav-item {
+  display: inline;
+  padding: 3vw;
+  margin: 5px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.hamburger {
+  display: none;
+}
+/* banner styling */
+.banner-container {
+  height: auto;
+  text-align: center;
+  font-size: 2.5vw;
+  /* padding-top: 10vh; */
+  margin: 5%;
+  margin-bottom: 0px;
+}
+.banner {
+  /* color: white; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner-heading {
+  padding-top: 10vh;
+}
+.banner-sub-heading {
+  font-size: 3vw;
+  padding-bottom: 10vh;
+}
+.banner-text {
+  text-align: justify;
+  font-size: 2vw;
+  padding: 10vh;
+}
+.portfolio {
+  text-decoration: none;
+  color: red;
+}
+/* main section styling */
+.main-section {
+  text-align: justify;
+  padding: 10vh;
+  margin: 5%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* footer styling */
+.footer-container {
+  text-align: center;
+  margin: 100px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.footer-container i {
+  padding: 5vw;
+}
+/* Shortcut to jump at Top */
+.top-icon {
+  position: fixed;
+  bottom: 5vw;
+  right: 2vw;
+  font-size: 1.5vw;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 1vw;
+  border-radius: 20vw;
+}
+.top-icon a {
+  text-decoration: none;
+  color: white;
+}
+/* Individual Sections with same Styling */
+.section-content {
+  /* height: 100vh; */
+  padding: 10vh 0px;
+  font-size: 3vh;
+}
+/* Banner Image */
+.display-image {
+  width: 25vw;
+  height: auto;
+}
+.git-item {
+  display: block;
+}
+.git-item a {
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: 10vh;
+  }
+  .navigation ul {
+    display: none;
+  }
+  .hamburger {
+    display: inline;
+    color: white;
+    font-size: 2vh;
+  }
+  .banner-container {
+    margin: 0px;
+    margin-top: 5%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-heading {
+    padding-top: 0px;
+  }
+  .banner-sub-heading {
+    padding-bottom: 0px;
+  }
+  .banner-text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .footer-container {
+    margin: 0px;
+  }
+  .footer-container i {
+    font-size: 5vh;
+  }
+  .main-section {
+    padding: 0px;
+  }
+  .section-content {
+    font-size: 2vh;
+  }
+}
